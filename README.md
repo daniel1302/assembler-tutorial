@@ -10,9 +10,14 @@
 ![Register](/help/registers.png)
 
     * rax - temporary register; when we call a syscal, rax must contain syscall number
-    * rdx - used to pass 3rd argument to functions
-    * rdi - used to pass 1st argument to functions
-    * rsi - pointer used to pass 2nd argument to functions
+    * rdi - 1st argument
+    * rsi - 2nd argument
+    * rdx - 3rd argument
+    * rcx - 4th argument
+    * r8  - 5th argument
+    * r9  - 6th argument
+    * rbp - base pointer register. It points to the base of the current frame
+    * rps - stack pointer. It points to the top of current stack frame
 
 
 # Control flow
